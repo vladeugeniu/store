@@ -1,0 +1,22 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+   
+   <br>
+   <h2> {{ book.name }} </h2>
+   <br><br>
+   <h3> {{ book.author }} </h3>
+   <br><br>
+   <p> {{book.description }} </p>
+   <br><br>
+   <p>  {{ book.price }} RON</p>
+   <br><br>
+
+    {% if book.amount > 0 %}
+   		<form method="POST" class="post-form">{% csrf_token %}
+        	{{ form.as_p }}
+    	    <button type="submit" class="save btn btn-default">Subbmit</button>
+   		 </form>
+    {% endif %}
+
+{% endblock %}

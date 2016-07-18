@@ -1,0 +1,39 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+   	<br>
+   {% for book in books %}
+  <div id="box">
+
+		<table class="book">
+			<tr class="book" id="name">
+				<td>
+					<p> Titlu: {{ book.name }} </p>
+				</td>
+			</tr>
+			
+			<tr class="book" id="author">
+				<td>
+					<p> Autor: {{ book.author }} </p>
+				</td>
+			</tr>
+				
+			<tr class="book">
+				<td class="book" id="price">
+					<p> Pret:{{ book.prie }} RON </p} 				</td>
+			
+				<td class="book" id="amount">
+			 	 <p> Numar bucati disponibile in stoc: {{ book.amount }} </p>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="button">
+		<a href={{book.id}}><button type="button" class="btn btn-primary">Details</button></a>
+	</div>
+
+	<br><br><br><br><br><br><br>
+{% endfor %}
+
+{% endblock %}

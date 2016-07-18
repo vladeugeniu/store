@@ -1,0 +1,39 @@
+/*Suprascriem cateva setari din bootstrap*/
+
+
+body {
+	background-color: #a22a2a !important;
+	height: 100% !important; /*necesar pentru a folosi min-height in extension*/
+}
+
+.container-fluid {
+	background-color: #FFFFFF !important;
+	float:left;
+	margin-left: 2% !important;
+	margin-right: 2% !important;
+	border-radius: 3% !important;
+}
+
+#extension {
+	background-color: #FFFFFF !important;
+	margin-left: 12.8% !important;
+	margin-right:12.8%;
+	border-radius: 3% !important;
+	min-height: 60%;
+
+}	
+
+.book {
+	border:double;
+	width: 80%;
+}
+#box {
+	float: left !important;
+	margin-right: 15%;
+	width: 60%;
+}
+
+#button {
+	margin-top: 3%;
+
+}
